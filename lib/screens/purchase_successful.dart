@@ -20,7 +20,10 @@ class Success extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              FlatButton.icon(onPressed: (){Navigator.pop(context);}, icon: Icon(Icons.home), label: CustomText(msg: "Go back home")),
+              // FloatingActionButton(
+              //     onPressed: (){Navigator.pop(context);},shape:
+              //     icon: Icon(Icons.home),
+              //     label: CustomText(msg: "Go back home")),
             ],
           )
         ],

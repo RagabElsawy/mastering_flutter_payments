@@ -93,31 +93,31 @@ class _LoginOneState extends State<LoginOne> {
                 padding: const EdgeInsets.all(15),
                 child: Container(
                   decoration: BoxDecoration(color: green),
-                  child: GestureDetector(
-                    onTap: () async {
-                      if (!await user.signIn()){
-                        _key.currentState.showSnackBar(
-                            SnackBar(content: Text("Sign in failed")));
-                        return;
-                      }
-                      user.clearController();
-                      changeScreenReplacement(context, HomeScreen());
-                    },
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: <Widget>[
-                        Padding(
-                          padding: const EdgeInsets.only(top: 15, bottom: 15),
-                          child: CustomText(
-                            msg: "LOGIN",
-                            color: white,
-                            size: 24,
-                            weight: FontWeight.w600,
-                          ),
-                        )
-                      ],
-                    ),
-                  ),
+                  // child: GestureDetector(
+                  //   onTap: () async {
+                  //     if (!await user.signIn()){
+                  //       _key.currentState.showSnackBar(
+                  //           SnackBar(content: Text("Sign in failed")));
+                  //       return;
+                  //     }
+                  //     user.clearController();
+                  //     changeScreenReplacement(context, HomeScreen());
+                  //   },
+                  //   child: Row(
+                  //     mainAxisAlignment: MainAxisAlignment.center,
+                  //     children: <Widget>[
+                  //       Padding(
+                  //         padding: const EdgeInsets.only(top: 15, bottom: 15),
+                  //         child: CustomText(
+                  //           msg: "LOGIN",
+                  //           color: white,
+                  //           size: 24,
+                  //           weight: FontWeight.w600,
+                  //         ),
+                  //       )
+                  //     ],
+                  //   ),
+                  // ),
                 ),
               ),
               Row(

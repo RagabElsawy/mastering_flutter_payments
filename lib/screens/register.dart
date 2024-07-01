@@ -97,25 +97,25 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   decoration: BoxDecoration(
                     color: green
                   ),
-                  child: GestureDetector(
-                    onTap: ()async{
-                      if(!await user.signUp()){
-                        scaffoldKey.currentState.showSnackBar(SnackBar(content: Text("Sign up failed")));
-                        return;
-                      }
-                      user.clearController();
-                      changeScreenReplacement(context, HomeScreen());
-                    },
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: <Widget>[
-                        Padding(
-                          padding: const EdgeInsets.only(top: 15, bottom: 15),
-                          child: CustomText(msg: "REGISTER", color: white, size: 24, weight: FontWeight.w600,),
-                        )
-                      ],
-                    ),
-                  ),
+                  // child: GestureDetector(
+                  //   onTap: ()async{
+                  //     if(!await user.signUp()){
+                  //       scaffoldKey.currentState.showSnackBar(SnackBar(content: Text("Sign up failed")));
+                  //       return;
+                  //     }
+                  //     user.clearController();
+                  //     changeScreenReplacement(context, HomeScreen());
+                  //   },
+                  //   child: Row(
+                  //     mainAxisAlignment: MainAxisAlignment.center,
+                  //     children: <Widget>[
+                  //       Padding(
+                  //         padding: const EdgeInsets.only(top: 15, bottom: 15),
+                  //         child: CustomText(msg: "REGISTER", color: white, size: 24, weight: FontWeight.w600,),
+                  //       )
+                  //     ],
+                  //   ),
+                  // ),
                 ),
               ),
               Row(
